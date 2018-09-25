@@ -1,0 +1,47 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+
+
+.container-dropdown {
+    display: flex;
+    justify-content: space-around;
+
+    li {
+        list-style: none;
+        padding: 20px;
+        background-color: coral;
+
+
+        ul {
+            flex-direction: column;
+        }
+
+        a {
+            font-family: Arial, Helvetica, sans-serif;
+            text-decoration: none;
+            color: black;
+            cursor: pointer;
+        }
+    }
+}
+
+
+li:hover {
+    background-color: #000;
+    transition: 0.5s;
+}
+
+.itens1 {
+    display: none;
+}
+
+.open {
+    display: block;
+}
