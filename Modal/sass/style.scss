@@ -1,0 +1,40 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    height: 1000vh;
+
+    .back-modal {
+        display: none;
+        height: 100%;
+        width: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        top: 0;
+        position: fixed;
+    }
+
+    .container-modal {
+        display: none;
+        justify-content: center;
+
+
+
+        .modal {
+            background-color: red;
+            width: 500px;
+            height: 500px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 5;
+            position: fixed;
+        }
+
+    }
+}
+
+.open {
+    display: flex !important;
+}
