@@ -14,7 +14,7 @@ openmodal.addEventListener('click', function () {
 
 });
 
-fechamodal.addEventListener('click', function(){
+fechamodal.addEventListener('dblclick', function(){
     modal.classList.remove('open');
     fechamodal.classList.remove('open');
 })

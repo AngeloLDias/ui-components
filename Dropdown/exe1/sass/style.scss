@@ -5,6 +5,9 @@
 
 body {
     background-color: #333;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 
@@ -19,6 +22,7 @@ body {
         background-color: coral;
 
 
+
         ul {
             flex-direction: column;
         }
@@ -30,18 +34,19 @@ body {
             cursor: pointer;
         }
     }
+
+    li:hover {
+        background-color: yellowgreen;
+        transition: 0.5s;
+    }
 }
 
 
-li:hover {
-    background-color: #000;
-    transition: 0.5s;
-}
 
 .itens1 {
     display: none;
 }
 
 .open {
-    display: block;
+    display: flex  !important;
 }

@@ -3,7 +3,10 @@
   margin: 0; }
 
 body {
-  background-color: #333; }
+  background-color: #333;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around; }
 
 .container-dropdown {
   display: flex;
@@ -19,15 +22,14 @@ body {
       text-decoration: none;
       color: black;
       cursor: pointer; }
-
-li:hover {
-  background-color: ;
-  transition: 0.5s; }
+  .container-dropdown li:hover {
+    background-color: yellowgreen;
+    transition: 0.5s; }
 
 .itens1 {
   display: none; }
 
 .open {
-  display: block; }
+  display: flex  !important; }
 
 /*# sourceMappingURL=style.css.map */
