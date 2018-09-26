@@ -2,15 +2,29 @@
     padding: 0;
     margin: 0;
 }
-
+@keyframes rotate{
+    0%{transform:rotateY(180deg);}
+    100%{transform:rotateY(360deg);}
+}
 body {
-    height: 1000vh;
+    background-color: #333;
+    height: 200vh;
+    .open-modal{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
 
+        h1,h2{
+            font-family: 'Courier New', Courier, monospace;
+            color: #f4f4f4;
+        }
+    }
     .back-modal {
         display: none;
         height: 100%;
         width: 100%;
-        background-color: rgba(0, 0, 0, 0.5);
+        background-color: rgba(0, 0, 0, 0.6);
         top: 0;
         position: fixed;
     }
@@ -21,15 +35,17 @@ body {
 
 
 
-        .modal {
-            background-color: red;
+        .modal {     
+            background-color: cornflowerblue;
             width: 500px;
             height: 500px;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             z-index: 5;
             position: fixed;
+            transition: 1s;
         }
 
     }
@@ -37,4 +53,8 @@ body {
 
 .open {
     display: flex !important;
+}
+.openmodal{
+    display: flex !important;
+    animation: rotate 0.4s linear ;
 }

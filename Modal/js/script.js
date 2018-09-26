@@ -5,9 +5,9 @@ var openmodal = document.querySelector('.open-modal');
 var fechamodal = document.querySelector('.back-modal');
 
 openmodal.addEventListener('click', function () {
-    modal.classList.toggle('open');
+    modal.classList.toggle('openmodal');
     // conmodal.classList.toggle('open');
-})
+});
 
 openmodal.addEventListener('click', function () {
     fechamodal.classList.add('open');
@@ -15,6 +15,6 @@ openmodal.addEventListener('click', function () {
 });
 
 fechamodal.addEventListener('dblclick', function(){
-    modal.classList.remove('open');
+    modal.classList.remove('openmodal');
     fechamodal.classList.remove('open');
 })
