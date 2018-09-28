@@ -38,11 +38,11 @@ body {
   display: flex !important; }
 
 .droper1Ativo {
-  transform: rotate(-50deg);
+  transform: SkewY(-50deg);
   transition: 1s; }
 
 .droper3Ativo {
-  transform: rotateZ(50deg);
+  transform: SkewY(50deg);
   transition: 1s; }
 
 .droper2Ativo {
@@ -51,7 +51,7 @@ body {
 
 .menu-hamburguer {
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   align-items: center;
   justify-content: center; }
 
